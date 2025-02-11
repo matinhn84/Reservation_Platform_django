@@ -9,12 +9,13 @@ OPTIOS_FOR_APPOINTMENT_STATUS = [
 ]
 # models
 class BookingSalon(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("کاربر"))
+    user = models.ForeignKey(User, on_delete=models.CASCADE, verbose_name=_("user"))
     service = 1
-    def save():
-        date = 1
-        pass
+    date = models.DateTimeField(auto_now_add=True)
+    appointment_date = 1
+    status = models.CharField(max_length=3, choices=OPTIOS_FOR_APPOINTMENT_STATUS, verbose_name=_("status"))
+    payment_status = models.BooleanField(default=False, verbose_name=_("payment_status"))
 
-    status = models.CharField(max_length=3, choices=OPTIOS_FOR_APPOINTMENT_STATUS, verbose_name=_("وضعیت نوبت"))
-    payment_status = models.BooleanField(default=False, verbose_name=_("وضعیت پرداخت"))
+    def __str__(self):
+        return f"{self.user} | service:{self.service} | date:{self.appointment_date}"
 
