@@ -170,6 +170,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-
-
+# define a new path for User model
+AUTH_USER_MODEL = "account.User"

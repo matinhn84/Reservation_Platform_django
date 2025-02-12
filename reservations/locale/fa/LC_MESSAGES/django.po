@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 14:16+0330\n"
+"POT-Creation-Date: 2025-02-12 14:17+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,22 +17,23 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
 #: .\reservations\models.py:12
-msgid "کاربر"
+msgid "user"
 msgstr ""
 
-#: .\reservations\models.py:18
-msgid "وضعیت نوبت"
+#: .\reservations\models.py:16
+msgid "status"
 msgstr ""
 
-#: .\reservations\models.py:19
-msgid "وضعیت پرداخت"
+#: .\reservations\models.py:17
+msgid "payment_status"
 msgstr ""
 
-#: .\reservations\templates\reservations\index.html:3
+#: .\reservations\templates\reservations\index.html:54
 msgid "Welcome to our website!"
 msgstr "به وبسایت دوزبانه خوش امدید"
 
-#: .\reservations\templates\reservations\index.html:4
+#: .\reservations\templates\reservations\index.html:55
 msgid "Book your appointment today."
 msgstr "نوبت رزرو کنید"

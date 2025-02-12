@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-02-11 14:16+0330\n"
+"POT-Creation-Date: 2025-02-12 14:17+0330\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,39 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-#: .\config\settings.py:119
-msgid "English"
+
+#: .\account\models.py:10
+msgid "The Email field must be set"
 msgstr ""
 
-#: .\config\settings.py:120
-msgid "Persian"
+#: .\account\models.py:18
+msgid "is_staff"
+msgstr ""
+
+#: .\account\models.py:19
+msgid "is_superuser"
+msgstr ""
+
+#: .\services\models.py:11
+msgid "user"
+msgstr ""
+
+#: .\services\models.py:12
+msgid "service image"
+msgstr ""
+
+#: .\services\models.py:13
+msgid "service title"
+msgstr ""
+
+#: .\services\models.py:14
+msgid "service price"
+msgstr ""
+
+#: .\services\models.py:15
+msgid "service duration"
+msgstr ""
+
+#: .\services\models.py:16
+msgid "service description"
 msgstr ""
