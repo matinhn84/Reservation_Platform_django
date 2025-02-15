@@ -1,6 +1,7 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 from .models import User
+from scheduling.models import Availability
 
 class CustomUserAdmin(UserAdmin):
     model = User
@@ -23,4 +24,16 @@ class CustomUserAdmin(UserAdmin):
         }),
     )
 
+admin.site.register(User, CustomUserAdmin)
+
+
+
+class AvailabilityInline(admin.TabularInline):  # or admin.StackedInline
+    model = Availability
+    extra = 1  # Allows adding extra slots easily
+
+class CustomUserAdmin(UserAdmin):
+    inlines = [AvailabilityInline]
+
+admin.site.unregister(User)
 admin.site.register(User, CustomUserAdmin)
